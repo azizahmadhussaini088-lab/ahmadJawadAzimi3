@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Write a Post | Azimi Blog</title>
+  <meta name="description" content="Write and publish posts on Azimi Blog.">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+<body>
+  <header>
+    <h1>🖋️ Write a New Blog</h1>
+    <nav>
+      <a href="index.html">🏠 Home</a>
+      <button id="toggle-theme">🌙 Dark Mode</button>
+    </nav>
+  </header>
+
+  <main class="new-post">
+    <h2>✨ Share Your Thoughts</h2>
+    <form id="postForm" class="post-form">
+      <input type="text" id="title" placeholder="Enter blog title..." required />
+      <textarea id="content" placeholder="Write your story here..." rows="8" required></textarea>
+
+      <div class="upload">
+        <label for="image"><i class="fa-solid fa-image"></i> Add Cover Image (optional)</label>
+        <input type="file" id="image" accept="image/*" />
+      </div>
+
+      <div class="buttons">
+        <button type="submit" id="publishBtn">🚀 Publish</button>
+        <button type="reset" id="cancelBtn">❌ Cancel</button>
+      </div>
+    </form>
+  </main>
+
+  <footer>
+    <div class="footer-content">
+      <div class="address">
+        <h3>📍 Address</h3>
+        <p>Kabul, Afghanistan</p>
+        <p>Email: info@azimiblog.com</p>
+      </div>
+
+      <div class="social">
+        <h3>🌐 Follow Us</h3>
+        <div class="icons">
+          <a href="https://facebook.com" target="_blank" title="Facebook" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+          <a href="https://twitter.com" target="_blank" title="Twitter" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+          <a href="https://instagram.com" target="_blank" title="Instagram" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+          <a href="https://linkedin.com" target="_blank" title="LinkedIn" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+       
+        </div>
+      </div>
+    </div>
+    <p class="copy">© 2025 Azimi Blog. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
